@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	
+</head>
+<style>   
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.register {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register a {
+  color: #4CAF50;
+}
+</style>
+<body>
+	<div class="container">
+		<h2>登录</h2>
+		<form action="#" method="post">
+			<label for="email">邮箱：</label>
+			<input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+			<label for="password">密码：</label>
+			<input type="password" id="password" name="password" placeholder="请输入您的密码" required>
+			<button type="submit">登录</button>
+			<p class="register">
+				还没有账号？ <a href="register.html">立即注册</a>
+			</p>
+		</form>
+	</div>
+</body>
+</html>
